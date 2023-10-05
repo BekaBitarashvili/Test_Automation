@@ -8,7 +8,6 @@ options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-driver.get("https://www.google.com")
+driver.get("http://demostore.supersqa.com/")
 driver.maximize_window()
-
-links = driver.find_elements("xpath", "//a[@href]")
+print(driver.title)
